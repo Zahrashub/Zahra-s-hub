@@ -59,37 +59,31 @@ $('document').ready(function(){
 		var randtop = 500 * Math.random();
 		$('#b1').animate({left: randleft, bottom: randtop}, 10000, loopOne);
 	}
-
 	function loopTwo() {
 		var randleft = 1000 * Math.random();
 		var randtop = 500 * Math.random();
 		$('#b2').animate({left: randleft, bottom: randtop}, 10000, loopTwo);
 	}
-
 	function loopThree() {
 		var randleft = 1000 * Math.random();
 		var randtop = 500 * Math.random();
 		$('#b3').animate({left: randleft, bottom: randtop}, 10000, loopThree);
 	}
-
 	function loopFour() {
 		var randleft = 1000 * Math.random();
 		var randtop = 500 * Math.random();
 		$('#b4').animate({left: randleft, bottom: randtop}, 10000, loopFour);
 	}
-
 	function loopFive() {
 		var randleft = 1000 * Math.random();
 		var randtop = 500 * Math.random();
 		$('#b5').animate({left: randleft, bottom: randtop}, 10000, loopFive);
 	}
-
 	function loopSix() {
 		var randleft = 1000 * Math.random();
 		var randtop = 500 * Math.random();
 		$('#b6').animate({left: randleft, bottom: randtop}, 10000, loopSix);
 	}
-
 	function loopSeven() {
 		var randleft = 1000 * Math.random();
 		var randtop = 500 * Math.random();
@@ -129,7 +123,6 @@ $('document').ready(function(){
 
 	$('#wish_message').click(function(){
 		vw = $(window).width() / 2;
-
 		$('#b1,#b2,#b3,#b4,#b5,#b6,#b7').stop();
 		$('#b1').attr('id', 'b11');
 		$('#b2').attr('id', 'b22');
@@ -138,7 +131,6 @@ $('document').ready(function(){
 		$('#b5').attr('id', 'b55');
 		$('#b6').attr('id', 'b66');
 		$('#b7').attr('id', 'b77');
-
 		$('#b11').animate({top: 240, left: vw-350}, 500);
 		$('#b22').animate({top: 240, left: vw-250}, 500);
 		$('#b33').animate({top: 240, left: vw-150}, 500);
@@ -146,7 +138,6 @@ $('document').ready(function(){
 		$('#b55').animate({top: 240, left: vw+50}, 500);
 		$('#b66').animate({top: 240, left: vw+150}, 500);
 		$('#b77').animate({top: 240, left: vw+250}, 500);
-
 		$('.balloons').css('opacity', '0.9');
 		$('.balloons h2').fadeIn(3000);
 		$(this).fadeOut('slow').delay(3000).promise().done(function(){
